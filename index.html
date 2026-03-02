@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Hoàng Minh Tuấn</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<div class="cv-wrapper">
+    <div class="cv">
+        <div id="sidebar"></div>
+        <div id="content"></div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+<script>
+fetch("header.html").then(r => r.text()).then(d => document.getElementById("header").innerHTML = d);
+fetch("sidebar.html").then(r => r.text()).then(d => document.getElementById("sidebar").innerHTML = d);
+fetch("content.html").then(r => r.text()).then(d => document.getElementById("content").innerHTML = d);
+fetch("footer.html").then(r => r.text()).then(d => document.getElementById("footer").innerHTML = d);
+</script>
+
+</body>
+</html>
